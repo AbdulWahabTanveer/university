@@ -1,0 +1,139 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+bool exist(int *array,int size,int x){
+    for(int i=0;i<size;i++)
+        if(x==array[i]) return true;
+    return false;
+}
+template <class T>
+class Stack{ 
+	T *x;
+	int p, size;
+public:
+	Stack(int s=15){	size = s; x = new T[size];	p = 0;	}
+	bool isFull(){	return p == size;						}
+	bool isEmpty(){	return p == 0;						}
+	void push(T d){
+		if (isFull())	throw (size);
+		x[p++]	= d;
+	}
+	T pop(){
+		if (isEmpty())	throw(0);
+		return x[--p];
+	}
+    void Pop(){
+        try
+        {
+            cout<<pop()<<' ';
+        }
+        catch(int i)
+        {
+            cout << "Stack is empty\n";
+        }
+        
+    }
+	T seeTop(){
+		if (isEmpty())	throw(0);	
+		return x[p-1];
+	}
+    void Populate(int *x,int size){
+        bool end=true;
+        for(int i=size-2;i>=0;i--){
+            if(x[i]!=-1)  push(x[i]);
+            if(x[i]==-1)  print();
+        }
+    }
+    void print(){
+        while(isEmpty()!= true){
+            Pop();
+        }
+        cout<<endl;
+    }
+    bool push_all(string d){
+        int no_of_brackets[3]={0};
+       // cout<<no_of_brackets[0]<<' '<<no_of_brackets[1]<<' '<<no_of_brackets[2]<<' '<<endl;
+        for(int i=0;i<d.length();i++){
+            //cout<<d[i]<<" ";
+            if(d[i]=='[') no_of_brackets[2]++;
+            else if(d[i]=='{')  no_of_brackets[1]++;
+            else if(d[i]=='(')  no_of_brackets[0]++;
+            if(d[i]==']')    no_of_brackets[2]--;
+            else if(d[i]=='}')   no_of_brackets[1]--;
+            else if(d[i]==')')   no_of_brackets[0]--;
+            //cout<<no_of_brackets[0]<<' '<<no_of_brackets[1]<<' '<<no_of_brackets[2]<<' '<<endl;
+        }
+       //cout<<no_of_brackets[0]<<' '<<no_of_brackets[1]<<' '<<no_of_brackets[2]<<' '<<endl;
+        if(no_of_brackets[0]==0&&no_of_brackets[1]==0&&no_of_brackets[2]==0)
+        return true;
+        return false;
+    } 
+    void composites(){
+        int x,i;bool none=false;
+        while(!isEmpty()){
+        x=pop();
+        for( i=2;i<x/2+1;i++){
+            none =false;
+            if(x%i==0) break;
+            none=true;
+        }
+        if(none==true){}
+        //cout<<"Divisor of "<<x<<" :"<<1<<endl;
+        else if(i*i!=x){
+        cout<<"Divisor of "<<x<<" :"<<i<<","<<x/i<<endl;
+        push(x/i);
+        }
+        else
+        cout<<"Divisor of "<<x<<" :"<<i<<endl;
+        }
+    }
+	void Division(int x){
+        push(x);
+        int* completed=new int[x/2];int size=0;
+        bool none=false;
+        while(!isEmpty()){
+            x=pop();if(x==0||x==1) {continue;}
+            if(exist(completed,size,x)) continue;
+            if(floor(x/2)*2==x){
+                completed[size++]=x;
+                cout<<x<<": "<<x/2<<"+"<<x/2<<endl;push(x/2);continue;
+            }
+            cout<<x<<": "<<floor(x/2)+1<<"+"<<floor(x/2)<<endl;
+            push(floor(x/2));push(floor(x/2)+1);
+            completed[size++]=x;
+        }
+    }
+    void expression_verrification(string x){
+        if(push_all(x))
+        cout<<x<<" is correct expression\n";
+        else
+        cout<<x<<" is an incorrect expression\n";
+    }
+    void flush(){
+        while(!isEmpty()) pop();
+    }
+    ~Stack(){	delete []x;	
+    }
+
+};
+int main(){
+	Stack <int> stack;
+    int size=11;
+    int *x= new int[size]{-1,23,59,37,-1,46,64,-1,24,32,-1};
+    stack.Populate(x,size);stack.flush();
+    stack.Division(46);stack.flush();
+    char z[]="64y";
+    string q=z;
+    if(q[q.length()-1]<'0'||q[q.length()-1]>'9'){
+        q.pop_back();
+    }
+    stack.push(16);stack.push(stoi(q));
+    stack.push(49);stack.push(29);
+    stack.composites();stack.flush();
+    Stack <char> reborn;
+    char array[] = "(X+y))";
+    string a =array;
+    reborn.expression_verrification(a);
+	return 0;
+}
