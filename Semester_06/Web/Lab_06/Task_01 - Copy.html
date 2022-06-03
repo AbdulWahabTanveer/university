@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+table.tr{
+border: 2
+}
+
+</style>
+</head>
+<body>
+<h1>BCSF19A513</h1>
+<table class="tg" id ="bahiMeTableHoon">
+
+<tbody>
+  <tr>
+    <td id="num1_1">324</td>
+    <td id="num2_1">523</td>
+    <td id="sum_1"> </td>
+  </tr>
+<tr>
+    <td id="num1_2">435</td>
+    <td id="num2_2">24</td>
+    <td id="sum_2"></td>
+  </tr>
+<tr>
+    <td id="num1_3">432</td>
+    <td id="num2_3">12</td>
+    <td id="sum_3"></td>
+  </tr>
+<tr>
+    <td id="num1_4">84</td>
+    <td id="num2_4">39</td>
+    <td id="sum_4"></td>
+  </tr>
+<tr>
+    <td id="num1_5">219</td>
+    <td id="num2_5">12</td>
+    <td id="sum_5"></td>
+  </tr>
+<tr>
+    <td id="num1_6">294</td>
+    <td id="num2_6">12</td>
+    <td id="sum_6"></td>
+  </tr>
+<tr>
+    <td id="num1_7">0</td>
+    <td id="num2_7">10</td>
+    <td id="sum_7"></td>
+  </tr>
+<tr>
+    <td id="num1_8">132</td>
+    <td id="num2_8">18</td>
+    <td id="sum_8"></td>
+  </tr>
+<tr>
+    <td id="num1_9">90</td>
+    <td id="num2_9">10</td>
+    <td id="sum_9"></td>
+  </tr>
+  <tr>
+    <td id="num1_10">100</td>
+    <td id="num2_10">150</td>
+    <td id="sum_10"> </td>
+  </tr>
+<tr>
+    <td id="num1_11">67</td>
+    <td id="num2_11">78</td>
+    <td id="sum_11"> </td>
+  </tr>
+<tr>
+    <td id="num1_12">99</td>
+    <td id="num2_12">101</td>
+    <td id="sum_12"></td>
+  </tr>
+<tr>
+    <td id="num1_13">67</td>
+    <td id="num2_13">69</td>
+    <td id="sum_13"></td>
+  </tr>
+<tr>
+    <td id="num1_14">69</td>
+    <td id="num2_14">69</td>
+    <td id="sum_14"></td>
+  </tr>
+<tr>
+    <td id="num1_15">8</td>
+    <td id="num2_15">8</td>
+    <td id="sum_15"></td>
+  </tr>
+<tr>
+    <td id="num1_16">18</td>
+    <td id="num2_16">2</td>
+    <td id="sum_16"></td>
+  </tr>
+<tr>
+    <td id="num1_17">17</td>
+    <td id="num2_17">8</td>
+    <td id="sum_17"></td>
+  </tr>
+<tr>
+    <td id="num1_18">1990</td>
+    <td id="num2_18">2022</td>
+    <td id="sum_18"></td>
+  </tr>
+<tr>
+    <td id="num1_19">786</td>
+    <td id="num2_19">0</td>
+    <td id="sum_19"></td>
+  </tr>
+<tr>
+    <td id="num1_20">1</td>
+    <td id="num2_20">1</td>
+    <td id="sum_20"></td>
+  </tr>
+</tbody>
+</table>
+<input type="button" name="OK" onclick="mycode()" value="Click"></button>
+
+
+<script>
+
+function mycode(){
+
+var table = document.getElementById("bahiMeTableHoon");
+
+var result=0;
+
+for (let i = 1; i <= 20; i++) {
+  
+  col1id="num1_" + i ;
+  col2id= "num2_" + i;
+  sumid = "sum_"+ i;
+  console.log(col1id);
+  console.log(col2id);
+  console.log(sumid);
+result = parseInt(document.getElementById(col1id).innerText) + parseInt(document.getElementById(col2id).innerText) ;
+  document.getElementById(sumid).innerText = result;
+}
+
+}
+
+</script>
+</body>
+</html>

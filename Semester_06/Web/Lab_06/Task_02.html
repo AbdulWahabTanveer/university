@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+  <label for="fname">First Number:</label><br>
+  <input type="text" id="firstno" name="firstnumber" value="1"><br>
+  <label for="lname">Second Number:</label><br>
+  <input type="text" id="secondno" name="secondnumber" value="2"><br><br>
+  <input type="button" value="Sum" onclick="sum()">
+  <input type="button" value="Subtract" onclick="subtract()">
+  <input type="button" value="Multiply" onclick="multiply()">
+  <input type="button" value="Divide" onclick="divide()">
+</form>
+<p id="result">This is Result</p>
+<script>
+
+function sum(){
+
+var num1 = document.getElementById("firstno").value;
+var num2 = document.getElementById("secondno").value;
+
+
+if(isNaN(num1)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+if(isNaN(num2)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+var first = parseInt(document.getElementById("firstno").value);
+var second = parseInt(document.getElementById("secondno").value);
+
+console.log(first);
+console.log(second);
+
+
+
+document.getElementById("result").innerHTML= first+second; 
+
+
+}
+
+function multiply(){
+
+var num1 = document.getElementById("firstno").value;
+var num2 = document.getElementById("secondno").value;
+
+
+if(isNaN(num1)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+if(isNaN(num2)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+
+var first = parseInt(document.getElementById("firstno").value);
+var second = parseInt(document.getElementById("secondno").value);
+
+console.log(first);
+console.log(second);
+
+
+
+document.getElementById("result").innerHTML= first*second; 
+
+
+}
+
+function divide(){
+
+var num1 = document.getElementById("firstno").value;
+var num2 = document.getElementById("secondno").value;
+
+
+if(isNaN(num1)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+if(isNaN(num2)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+
+var first = parseInt(document.getElementById("firstno").value);
+var second = parseInt(document.getElementById("secondno").value);
+
+console.log(first);
+console.log(second);
+
+
+if(second==0){
+return;
+}
+document.getElementById("result").innerHTML= first/second; 
+
+
+}
+
+function subtract(){
+
+var num1 = document.getElementById("firstno").value;
+var num2 = document.getElementById("secondno").value;
+
+
+if(isNaN(num1)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+if(isNaN(num2)){
+document.getElementById("result").innerHTML= "Please Enter only Numbers"; 
+return;
+ }
+
+var first = parseInt(document.getElementById("firstno").value);
+var second = parseInt(document.getElementById("secondno").value);
+
+console.log(first);
+console.log(second);
+
+
+
+document.getElementById("result").innerHTML= first-second; 
+
+
+}
+
+
+</script>
+
+</body>
+</html>
