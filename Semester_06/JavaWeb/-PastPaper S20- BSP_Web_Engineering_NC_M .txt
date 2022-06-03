@@ -1,0 +1,300 @@
+﻿JAVA developed by?
+A) Bjarne Stroustrup
+B) Anders Hejlsberg
+C) James Gosling
+D) Guido van Rossum
+ANSWER: C
+Recompiles of bytecode to machine code is done by?
+A) Textpad
+B) Netbeans
+C) JIT Compiler
+D) JVM Compiler
+ANSWER: C
+Sequence of java program phases is?
+A) Edit, compile, load, verify, execute
+B) Edit, compile, load ,execute
+C) Edit, compile, load, verify, error finding, execute
+D) Edit, compile, execute
+ANSWER: A
+What does JRE means?
+A) Java runtime entirement
+B) Java runtime entity
+C) Java runtime envirement
+D) Java runtime environment
+ANSWER: D
+The java.io package is used for ___________ ?
+A) Input and Output functions
+B) Input functions
+C) Output funtions
+D) Input and outclass functions
+ANSWER: A
+Which package has system.out.println?
+A) Package 'java.lang'
+B) Package 'java.out'
+C) Package 'java.io'
+D) Package 'java.net'
+ANSWER: A
+Phenomenon of polymorphism is often called?
+A) Late binding
+B) Runtime binding
+C) Late and Runtime binding
+D) Early binding
+ANSWER: C
+Class without main method can be compiled into?
+A) Only into exe file
+B) Only into .class file
+C) Both exe and .class file
+D) Can not be compiled
+ANSWER: B
+________ package has Scanner class?
+A) A java.util
+B) A java.lang
+C) A javax.swing
+D) A java.net
+ANSWER: A
+The input comes from input dialog box of GUI ________ ?
+A) As String
+B) As int
+C) As char
+D) As float
+ANSWER: A
+Which class is used by clients to make a connection with a server?
+A) Class java.net.seversocket
+B) Class java.net.socket 
+C) Class java.net.client
+D) Class java.net.server
+ANSWER: B
+Connection oriented protocol is ?
+A) TCP
+B) UDP
+C) TCP and UDP
+D) FTP
+ANSWER: A
+Servlet is a Java class instantiated by the server to produce a _____?
+A) Socket
+B) Dynamic response
+C) Static response
+D) Server
+ANSWER: B
+JSP stands for?
+A) JAVA Server Pages
+B) JAVA Servlet Pages
+C) JAVA Server Packages
+D) JAVA Service Plans
+ANSWER: A
+Four steps of java life cycle are?
+A) Compilation, initialization, Execution, Clean up
+B) Compilation, Execution, initialization Clean up
+C) Initialization, Compilation, Execution, Clean up
+D) Compilation, initialization, Clean up, Execution
+ANSWER: A
+When init() is called?
+A) When compiling starts
+B) When servlet is initiated
+C) When server page run
+D) When doget() method is called
+ANSWER: B
+JSP is?
+A) JAVA inside HTML
+B) HTML inside JAVA
+C) JAVA inside XML
+D) XML inside JAVA
+ANSWER: A
+Servlet is?
+A) JAVA inside HTML
+B) HTML inside JAVA
+C) JAVA inside XML
+D) XML inside JAVA
+ANSWER: B
+MVC stands for?
+A) Model View Controller
+B) Modal View Controller
+C) Model View Controllar
+D) Model View Controler
+ANSWER: A
+Can we add more than one view?
+A) Yes
+B) No
+C) Depends on controller
+D) Depends on Model
+ANSWER: A
+XML designed to?
+A) View Data
+B) Carry Data
+C) Delete Data 
+D) Insert Data
+ANSWER: B
+Choose the sequence of Thread Life Cycle?
+A) Born State, Ready State, Running State, Dead State
+B) Born State, Running State, Ready State, Dead State
+C) Ready State, Running State, Born State, Dead State
+D) Ready State, Born State, Running State, Dead State
+ANSWER: A
+HTML is _____________ programming language?
+A) A low level
+B) A high level
+C) An assembly
+D) Not a
+ANSWER: D
+Who is making the Web standards?
+A) The World Wide Web Consortium
+B) Microsoft
+C) Google
+D) Amazon
+ANSWER: A
+Choose the correct HTML element for the largest heading?
+A) Tag <h5>
+B) Tag <h6>
+C) Tag <h1>
+D) Tag <h7>
+ANSWER: C
+A language that uses instructions to describe the nature of document is called?
+A) Markup Language
+B) Programming Language
+C) Natural Processing Language
+D) Machine Language
+ANSWER: A
+How do you select an element with id 'demo' in CSS?
+A) By using #demo
+B) By using .demo
+C) By using @demo
+D) By using *demo
+ANSWER: A
+How do you insert a comment in a CSS file?
+A) By using \\ comment \\
+B) By using */ comment /*
+C) By using // comment //
+D) By using /* comment */
+ANSWER: D
+How do you declare a JavaScript variable?
+A) By using 'war carName'
+B) By using 'var carName'
+C) By using 'variable carName'
+D) By using 'variables carName'
+ANSWER: B
+Is JavaScript case-sensitive?
+A) Let see
+B) Somehow
+C) Yes
+D) No
+ANSWER: C
+When a web page is loaded, the browser creates a ________________ of the page?
+A) Digital Object Model
+B) Document Oriented Model
+C) Docx Obj Model
+D) Document Object Model
+ANSWER: D
+Which is a code injection technique that might destroy your database?
+A) Phishing
+B) Passive Attack
+C) SQL injection
+D) HTTP Request Smuggling
+ANSWER: C
+What represent the query string in the URL?
+A) Symbol @
+B) Symbol &
+C) Symbol /
+D) Symbol ?
+ANSWER: D
+Logic behind SQL injection is?
+A) Variable equals to variable
+B) Variable equals to constant
+C) Constant equals to variable
+D) Constant equals to constant
+ANSWER: D
+W3C stands for?
+A) W3schools
+B) World Wide Web Consorsium
+C) World Wide Web Consortium
+D) World Wide Web Consorteum
+ANSWER: C
+___________ are also called as Runtime Exceptions?
+A) Checked Exceptions
+B) Unchecked Exceptions
+C) Error
+D) Compile Time Exceptions
+ANSWER: B
+___________ are also called as Compile Time Exceptions?
+A) Checked Exceptions
+B) Unchecked Exceptions
+C) Error
+D) Runtime Exceptions
+ANSWER: A
+_________ allows any other threads of the same priority to execute?
+A) Yield Function
+B) Join Function
+C) Synchronized Keyword
+D) Wait Function
+ANSWER: A
+A java interface can contain?
+A) Public Static Final Variables only
+B) Public Abstract Methods
+C) Abstract methods(unimplemented) and implemented methods both
+D) Public Static Final Variables and Abstract Methods both
+ANSWER: D
+Which statement is true?
+A) To use jQuery, you do not have to do anything
+B) Most browsers (Internet Explorer, Chrome, Firefox and Opera) have the jQuery library built in the browser
+C) To use jQuery, you can refer to a hosted jQuery library at Google
+D) To use jQuery, you must buy the jQuery library at www.jquery.com
+ANSWER: C
+Which is a JavaScript library?
+A) JSP
+B) JQuery
+C) AJAX
+D) XML
+ANSWER: B
+AJAX stands for?
+A) Application of Java And XML
+B) Asynchronous JavaScript And XML
+C) A JavaScript And XAML
+D) Asynchronous JavaScript And XAML
+ANSWER: B
+Which is a lightweight data-interchange format?
+A) XAML
+B) JQuery
+C) AJAX
+D) JavaScript Object Notation
+ANSWER: D
+A method which is declared as abstract and does not have implementation is known as an _____________?
+A) Abstract Interface
+B) Abstract Thread
+C) Abstract List
+D) Abstract Method
+ANSWER: D
+Which of these access specifiers can be used for an interface?
+A) Protected
+B) Private
+C) Public
+D) Package
+ANSWER: C
+Which of these can be used to fully abstract a class from its implementation?
+A) Objects
+B) Packages
+C) Concrete Class
+D) Interfaces
+ANSWER: D
+Which constructor of Datagram Socket class is used to create a datagram socket and binds it with the given Port Number?
+A) Datagram Socket(int port)
+B) Datagram Socket(int port, Int Address address)
+C) Datagram Socket()
+D) Datagram Socket(int address)
+ANSWER: B
+AWT stands for _________ ?
+A) Abstract Window ToolKit
+B) Abstract Window Tools
+C) Absolute Window ToolKit
+D) Absolute Window Tools
+ANSWER: A
+_________ components are often called "lightweight" components?
+A) Swing
+B) AWT
+C) AWT and Swing
+D) Sometimes AWT, Sometimes Swing
+ANSWER: A
+In a ________ driver, a three-tier approach is used to accessing databases?
+A) Type 1
+B) Type 2 
+C) Type 3
+D) Type 4
+ANSWER: C
