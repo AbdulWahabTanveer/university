@@ -1,0 +1,6 @@
+some important commands and their use in linux
+
+ls to show a list of files and directories
+ls -l for long lish
+ls -a to list all sort of files
+

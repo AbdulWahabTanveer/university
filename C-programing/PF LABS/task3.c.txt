@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {int unit,arreas,total=0,r1=0,r2=0,r3=0,st=0,at=0;
+            scanf("%d%d",&unit,&arreas);
+            if(unit>200)
+            {unit=unit-200;
+                r3=(unit*15);
+                r2=100*10;
+                r1=100*5;
+            printf("Charges on first 100 units:%d\n",r1);
+            printf("Charges on next 100 units:%d\n",r2);
+            printf("Charges on next %d units:%d\n",unit,r3);}
+            else if(unit<=200 && unit>100)
+            {unit=unit-100;
+                r3=0;
+                r2=(unit*10);
+                r1=100*5;
+            printf("Charges on first 100 units:%d\n",r1);
+            printf("Charges on next %d units:%d\n",unit,r2);}
+            else if(unit>=100)
+            {unit=unit-200;
+                r3=0;
+                r2=0;
+                r1=unit*5;
+            printf("Charges:%d",r1);}
+            total=r1+r2+r3;
+            printf("Total Charges:%d\n",total);
+            st=(total*15)/100;
+            at=(total*5)/100;
+            total=total+at+st;
+            printf("Sales Tax:%d\n",st);
+            printf("Democracy Tax:%d\n",at);
+            printf("Total Bill Current Month:%d Arrears:%d\n",total,arreas);
+                total=total+arreas;
+                printf("Amount Payable Within Due Date:%d\n",total);
+                total=total+((total*5)/100);
+                printf("Amount Payable After Due Date:%d",total);
+            
+                /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}

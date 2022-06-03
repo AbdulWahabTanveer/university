@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(){
+int a[10],i,j,temp;//index
+//type name[size]
+//a[0],a[1],a[2],----a[9]
+//
+//
+for(i=0;i<=9;i++){
+    scanf("%d",&a[i]);
+}
+for(i=0;i<=9;i++){
+    printf("%d",a[i]);
+}
+printf("\n\n");
+for(j=1;j<=10;j++){//index
+    for(i=0;i<=8;i++){//size index
+    if(a[i]>a[i+1]){
+    temp=a[i];
+    a[i]=a[i+1];
+    a[i+1]=temp;
+}}}
+
+for(i=0;i<=9;i++){
+    printf("%d ",a[i]);
+}
+return 0;
+
+
+}
