@@ -1,0 +1,44 @@
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <string.h>
+
+using namespace std;
+
+string* Read(int &count){
+    ifstream file;
+    file.open("data.txt",ios::in);
+    
+    count=0;
+
+    string *line;line=new string[100];
+    while (getline(file, line[count++])){}
+    file.close();
+    count--;
+    return line;
+}
+
+/*
+char* Asm(){
+    int i;//1 11 1 ccccccc ddd jjj A+M 
+    for(asdasdas)
+    if(c[i]==' ')
+        break;
+    if(c[i]=='@'){
+        c[i+1];       //    M   =   M+1   ;   JMP
+    }
+    else {c instruction    control unit char[16]};
+    return "as";
+}*/
+
+int main(){
+    string *c;   //1 4-byte
+    int count=-999;
+    c=Read(count);
+    for(int i=0;i<count;i++){
+        cout<<c[i]<<"\n";
+    }
+
+    cout<<"count: "<<count;
+
+}

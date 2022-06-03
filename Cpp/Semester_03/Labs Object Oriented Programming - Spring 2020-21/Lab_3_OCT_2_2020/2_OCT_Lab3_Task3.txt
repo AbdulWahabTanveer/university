@@ -1,0 +1,22 @@
+In this problem, matrix operations are required.
+There can be matrix of any size. You have to read rows and columns.
+Next read matrix elements accordingly. Next read a positive number,
+representing number of operations. There may be any number of operations
+possible, however there are 7 different possible operations, which may be
+called in any order:
+
+1 multiply kth row with some scalar value
+2 multiply kth col with some scalar value
+3 add jth row into kth row
+4 add jth col into kth col
+5 subtract jth row from kth row
+6 subtract jth col from kth col
+7 show matrix elements in proper format
+
+After reading number of operations. User has to read required
+operation number. For each operation further read operation may
+be required according to the operation. User has to perform operation
+ according to operation number. See input. There are two rows three
+ columns. Next there are 6 elements. There are 5 operations. There are
+ three show operations represented by 7. Whereas two other operations.
+ See output for further understanding.

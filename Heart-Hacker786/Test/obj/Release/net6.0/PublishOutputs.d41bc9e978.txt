@@ -1,0 +1,7 @@
+/home/lone-wolf/Heart-Hacker786/Test/publish/Test
+/home/lone-wolf/Heart-Hacker786/Test/publish/appsettings.Development.json
+/home/lone-wolf/Heart-Hacker786/Test/publish/appsettings.json
+/home/lone-wolf/Heart-Hacker786/Test/publish/Test.dll
+/home/lone-wolf/Heart-Hacker786/Test/publish/Test.deps.json
+/home/lone-wolf/Heart-Hacker786/Test/publish/Test.runtimeconfig.json
+/home/lone-wolf/Heart-Hacker786/Test/publish/Test.pdb
