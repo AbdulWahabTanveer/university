@@ -1,0 +1,24 @@
+img{
+  display: none;
+}
+header{
+  background-color: #5B6351;
+}
+h1{
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+h2{
+  color: #4E7AEF;
+  text-transform: uppercase;
+}
+section{
+  background-color: #5B6351;
+}
+nav{
+  font-family: Arial,cursive,fantasy;
+}
+a{
+  color: #000000;
+}

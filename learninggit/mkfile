@@ -1,0 +1,7 @@
+all: a.out
+
+hello.o:hello.c
+	gcc -c hello.c
+
+a.out:hello.o
+	gcc hello.o

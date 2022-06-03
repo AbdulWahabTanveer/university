@@ -1,0 +1,5 @@
+hello.o:hello.c
+	gcc -c hello.c
+	
+myexe:hello.o
+	gcc hello.o -o myexe
